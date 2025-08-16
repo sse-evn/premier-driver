@@ -57,3 +57,9 @@ window.onclick = function(event) {
     closeCallModal();
   }
 };
+
+// Меню
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}

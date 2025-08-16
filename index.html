@@ -3,30 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#d32f2f" />
   <title>Premier — Трезвый водитель премиум-класса</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Фоновое видео -->
   <div class="video-container">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="auto">
       <source src="assets/IMG_0205.MP4" type="video/mp4" />
       Ваш браузер не поддерживает видео.
     </video>
     <div class="overlay"></div>
   </div>
 
+  <!-- Меню -->
+  <nav class="navbar">
+    <div class="logo">Premier</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Главная</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
   <!-- Основной контент -->
   <main class="content">
     <!-- Главный экран -->
-    <section class="hero">
+    <section id="hero" class="hero">
       <h1 class="slogan" id="slogan"></h1>
       <button class="cta-button" onclick="openCallModal()">Вызвать водителя</button>
     </section>
 
     <!-- О компании -->
-    <section class="about">
-      <h2>Premier — трезвый водитель премиум-класса</h2>
+    <section id="about" class="about">
+      <h2>Премиум-сервис для вашего комфорта</h2>
       <p>
         Когда нужно добраться домой или по делам, но вы за рулём и не можете ехать сами — доверьтесь Premier.
         Наши водители приедут за 15 минут, аккуратно доставят вас и ваш автомобиль в любую точку города.
@@ -34,13 +49,13 @@
 
       <div class="features">
         <div class="feature">
-          <span>🚗</span>
+          <span>⏱️</span>
           <h3>Прибытие от 15 минут</h3>
           <p>Быстрая подача водителя в любую точку города</p>
         </div>
         <div class="feature">
           <span>👨‍✈️</span>
-          <h3>Опытные и вежливые водители</h3>
+          <h3>Опытные водители</h3>
           <p>Профессионалы с безупречной репутацией</p>
         </div>
         <div class="feature">
@@ -50,14 +65,33 @@
         </div>
         <div class="feature">
           <span>🔒</span>
-          <h3>Конфиденциальность и безопасность</h3>
+          <h3>Конфиденциальность</h3>
           <p>Ваши данные и поездка полностью защищены</p>
         </div>
       </div>
     </section>
 
+    <!-- Услуги -->
+    <section id="services" class="services">
+      <h2>Что мы предлагаем</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Доставка домой</h3>
+          <p>Мы заберём вас и доставим домой безопасно и быстро.</p>
+        </div>
+        <div class="service-card">
+          <h3>Доставка до офиса</h3>
+          <p>Подъедем к вашему автомобилю и отвезём вас на работу.</p>
+        </div>
+        <div class="service-card">
+          <h3>Сопровождение</h3>
+          <p>Сопроводим вас по делам, останемся рядом с машиной.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Футер -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <p>Premier — ваш путь, ваш водитель.</p>
       <button class="footer-button" onclick="openCallModal()">Позвонить сейчас</button>
     </footer>
