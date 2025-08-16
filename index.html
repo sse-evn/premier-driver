@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premier — Трезвый водитель премиум-класса</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Фоновое видео -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-car-driving-through-a-forest-4060-large.mp4" type="video/mp4" />
+      Ваш браузер не поддерживает видео.
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Основной контент -->
+  <main class="content">
+    <!-- Главный экран -->
+    <section class="hero">
+      <h1 class="slogan" id="slogan"></h1>
+      <button class="cta-button" onclick="openCallModal()">Вызвать водителя</button>
+    </section>
+
+    <!-- О компании -->
+    <section class="about">
+      <h2>Premier — трезвый водитель премиум-класса</h2>
+      <p>
+        Когда нужно добраться домой или по делам, но вы за рулём и не можете ехать сами — доверьтесь Premier.
+        Наши водители приедут за 15 минут, аккуратно доставят вас и ваш автомобиль в любую точку города.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <span>🚗</span>
+          <h3>Прибытие от 15 минут</h3>
+          <p>Быстрая подача водителя в любую точку города</p>
+        </div>
+        <div class="feature">
+          <span>👨‍✈️</span>
+          <h3>Опытные и вежливые водители</h3>
+          <p>Профессионалы с безупречной репутацией</p>
+        </div>
+        <div class="feature">
+          <span>🕐</span>
+          <h3>Работаем 24/7</h3>
+          <p>Круглосуточное обслуживание без выходных</p>
+        </div>
+        <div class="feature">
+          <span>🔒</span>
+          <h3>Конфиденциальность и безопасность</h3>
+          <p>Ваши данные и поездка полностью защищены</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <p>Premier — ваш путь, ваш водитель.</p>
+      <button class="footer-button" onclick="openCallModal()">Позвонить сейчас</button>
+    </footer>
+  </main>
+
+  <!-- Модальное окно -->
+  <div id="callModal" class="modal">
+    <div class="modal-content">
+      <h3>Как связаться с нами?</h3>
+      <button class="modal-btn whatsapp" onclick="openWhatsApp()">WhatsApp</button>
+      <button class="modal-btn phone" onclick="callNow()">Позвонить</button>
+      <button class="modal-btn cancel" onclick="closeCallModal()">Отмена</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
