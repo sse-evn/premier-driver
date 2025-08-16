@@ -39,7 +39,7 @@ function closeCallModal() {
 
 // WhatsApp с готовым текстом
 function openWhatsApp() {
-  const phoneNumber = "+79991234567";
+  const phoneNumber = "+77471391857";
   const message = encodeURIComponent("Здравствуйте! Хочу вызвать трезвого водителя Premier. Могу ли я получить помощь?");
   window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   closeCallModal();
@@ -47,7 +47,7 @@ function openWhatsApp() {
 
 // Звонок
 function callNow() {
-  window.location.href = "tel:+79991234567";
+  window.location.href = "tel:+77471391857";
   closeCallModal();
 }
 

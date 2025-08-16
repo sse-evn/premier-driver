@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#d32f2f" />
+  <meta name="theme-color" content="#FFD700" />
   <title>Premier — Трезвый водитель премиум-класса</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="apple-touch-icon" href="icon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- Фоновое видео (двойной слой для плавного цикла) -->
+  <!-- Фоновое видео -->
+<!-- Фоновое видео -->
+<!-- Фоновое видео -->
 <div class="video-container">
-  <video class="video-layer" autoplay muted playsinline>
-    <source src="assets/IMG_0205.MP4" type="video/mp4" />
-    Ваш браузер не поддерживает видео.
-  </video>
-  <video class="video-layer" autoplay muted playsinline>
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    preload="auto"
+    class="video-layer"
+  >
     <source src="assets/IMG_0205.MP4" type="video/mp4" />
     Ваш браузер не поддерживает видео.
   </video>
   <div class="overlay"></div>
 </div>
-
   <!-- Меню -->
   <nav class="navbar">
     <div class="logo">Premier</div>
